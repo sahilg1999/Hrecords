@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html style="height:100%; min-height: 85vh;">
+
+<body style="background-color:floralwhite; height: 100%; min-height: 85vh;">
+    <div style="display:flex; padding:10px;margin:10px;flex-wrap: wrap; flex-direction: row; justify-content: space-around;">
+
+        <p>Enter ID&nbsp;<input type="number" [(ngModel)]="id"></p>
+        <p>Enter Title&nbsp;<input type="text" [(ngModel)]="title"></p>
+        <p>Enter Status&nbsp;<input type="text" [(ngModel)]="status"></p>
+        <p>Enter Priority&nbsp;<input type="text" [(ngModel)]="priority"></p>
+        <p>Enter Assignee&nbsp; <input type="text" [(ngModel)]="assignee"></p>
+        <p>Enter Issues&nbsp;<input type="text" [(ngModel)]="issue"></p>
+       
+    </div>
+    <div style="display: flex; padding: 20px; margin:20px; flex-direction: row; flex-wrap: nowrap; justify-content:center;">
+         <button (click)="CreateIssue()" style="background-color:#0f0; color:#fff; border-radius: 25px; padding: 10px; margin: 20px;cursor: pointer;">Submit</button>
+        <button (click)="GoBack()" style="background-color: blue; color: #fff; border-radius: 25px; padding: 10px; margin: 20px; width: 60px; cursor: pointer;">Back</button>
+    </div>
+</body>
+
+</html>

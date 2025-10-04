@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div style="margin:20px">
+    <h2 style="background-color: blueviolet; text-align: center; padding:8px;">Issue Tracker</h2>
+    <!-- <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+    <thead>
+      <tr style="background-color: #d8b4ff;">
+        <th style="border: 1px solid #ccc; padding: 8px;">ID</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Title</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Status</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Priority</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Assignee</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Updated At</th>
+        <th style="border: 1px solid #ccc; padding: 8px;">Issues</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let record of HRecords" style="border: 1px solid #ccc;">
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.id}}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.title}}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.r_status}}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.priority}}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.assignee}}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.updatedAt}}</td>
+        <td style="border: 1px solid #ccc; padding: 8px;">{{record.issues}} </td>
+      </tr>
+    </tbody>
+  </table> -->
+
+    <div>
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</body>
+
+</html>

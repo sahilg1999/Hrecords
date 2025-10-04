@@ -1,0 +1,16 @@
+.closebutton{
+    background: none;
+    border: none;
+    font-size: 1.5em; /* Adjust size as needed */
+    cursor: pointer;
+    padding: 0;
+    color:#888;
+}
+/* p{
+    margin:20px;
+    padding:10px;
+
+} */
+/* *{
+    border:1px solid #000;
+} */

@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+ input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+/* html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; } */
+/* .tooltip{
+  position: absolute;
+  display:inline-block;
+  visibility: hidden;
+  width: 120px;
+  border-radius: 6px;
+  padding: 5px 0;
+}
+.tooltip.tooltip:click{
+  position: relative;
+  visibility: visible;
+  z-index:1;
+
+} */
