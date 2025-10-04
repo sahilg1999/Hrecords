@@ -1,56 +1,59 @@
 # Hrecords
-It is a angular web app to create, update Issues which uses filter, sorting and searching to enhance the efficiency of data retrieval
-                                       Hrecords
- <!-- Create backend for our project -->
- install all required softwares like python, node.js, postman, VsCode
- Then run command pip install fastapi in python---> this is for backend api
- To serve API as an endpoint we need uvicorn module
- so run pip install uvicorn
- for api inputs we run this command pip install multipart ----> for installing multipart module
- To connect with Database we need to install mysql connector ---> pip install mysql-connector-python
 
- After installing Node.js run ---> npm install -g @angular/cli to install latest version of angular cli
- Create file main.py which contains our backend code---> In that file import necessary modules like fastapi, mysql.connector, corsmiddleware
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.2.
 
- Connect mysql db with mysql connector and provide root, password, host, database
+## Development server
 
- Basic syntax for fastapi is like @app.get('/') define function for which will be executed when we navigate this route
+To start a local development server, run:
 
- Add middleware by writing app.add_middleware and give parameters for api to connect with cross origin 
+```bash
+ng serve
+```
 
- Now create function for different routes like creating issue, updating issue, getting health status , get issues by id
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
- To run backend---> python -m uvicorn main:app --reload
+## Code scaffolding
 
- Now test these routes with postman by providing data---> to check if API is working fine
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
 
- After we done with backend now let's create frontend on angular framework
+```bash
+ng generate component component-name
+```
 
- <!-- Creating frontend for our project -->
- To generate new project in angular we use command----- ng new project name -----which is in our case Hrecords
- To generate new component we use command -------> ng generate component component name--------- we generated two component first is IssueComponent it is used for showing table, updating issue and route to create issue and second is MyForm which is used for creating issue
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-In angular import modules like MatTableModule, MatPaginatorModule, MatSortModule,RouterOutlet etc.
+```bash
+ng generate --help
+```
 
-To route to url we need to use either router-outlet tag in html or router.navigate['url']
-MatTableModule is used for table, MatPaginator used for pagination and Matsortmoduel is used for sorting
+## Building
 
-Apart from it we created search box and filter so for filtering we have inbuilt function of mattable module which filter
+To build the project run:
 
-For filter it can be accessed through filter image beside Issues column.
+```bash
+ng build
+```
 
-In searchbox we have used autocomplete so whenver user enter for search it shows result in dropdown. User can select the result or press enter, table will access particular record accordingly.
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-To use sorting when user hover on column he sees increasing or decreasing arrrow which is given for sorting ascendingly or decendingly.
+## Running unit tests
 
-We have used liveannouncer it is to provide events messages to sorting module so whenever there is change by clicking sorting it perform specific sorting accordingly.
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
-To update Issue user have to provide id and issue and when he click on update button issue gets updated and table will be refreshed and updatedAt will changed.
+```bash
+ng test
+```
 
-To create Issue user will be directed to next page where he has to provide certain inputs for creating issue like id, title, assignee, priority etc.
+## Running end-to-end tests
 
-In Table pagination we have used angular built in matpaginator module where items per page can be selected like 5,10, 25, 100 and there are next page and previous page button to toggle table records.
+For end-to-end (e2e) testing, run:
 
+```bash
+ng e2e
+```
 
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Additional Resources
 
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
